@@ -1,0 +1,51 @@
+baseURL = 'https://nandspace.github.io'
+languageCode = 'en-us'
+title = 'Nandspace'
+
+[[module.imports]]
+path = 'github.com/gethinode/hinode'
+
+[params]
+  description = "A space for projects, team collaboration, and knowledge sharing."
+  author = "Nandspace Team"
+  showToc = true  # Enable Table of Contents
+  defaultTheme = "dark"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 3
+
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 4
+
+[params.style]
+  primary = "#4A90E2"    # Your custom primary color
+  secondary = "#50E3C2"  # Your custom secondary color
+  success = "#198754"
+  info = "#0dcaf0"
+  warning = "#ffc107"
+  danger = "#dc3545"
+  light = "#f8f9fa"
+  dark = "#212529"
+
+[params.navigation]
+    logo = "/img/logo.svg"
+
+[params.docs]
+    basePath = "_vendor/github.com/gethinode/hinode"
+    github = "https://github.com/gethinode/docs"
+    release = "https://github.com/gethinode/hinode/releases/tag/"
